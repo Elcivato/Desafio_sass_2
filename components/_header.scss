@@ -1,9 +1,5 @@
-* {
-    font-family: $fontImpact;
-}
-
 header {
-    background-color: $maincolor;
+    background-color: $mainColor;
     display: flex;
     gap: 20px;
     grid-gap: 20px;
@@ -11,10 +7,11 @@ header {
     .logo {
         width: 100px;
     }
+
     .navbar {
         display: flex;
         align-items: center;
-        
+
         .menu {
             display: flex;
             list-style-type: none;
@@ -22,22 +19,43 @@ header {
             grid-gap: 10px;
 
             .menu__item {
-                -webkit-animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
-                animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
+                -webkit-animation:swirl-in-fwd .6s ease-out both;
+                animation:swirl-in-fwd .6s ease-out both;
+
                 a {
                     background: white;
                     border: 5px solid white;
-                    color: $maincolor;
+                    color: $mainColor;
                     text-decoration: none;
                     padding: 1rem;
 
                     &:hover {
-                        background: $maincolor;
+                        background: $mainColor;
+                        color: white;
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    a {
+                        background: $secondaryColor;
+                        border-color: $secondaryColor;
                         color: white;
                     }
                 }
             }
+
+            @for $item from 1 through 4 {
+
+                .menu__item:nth-child(#{$item}) {
+                    animation-delay: $item*0.2s;
+                }
+                
+            }
         }
     }
 }
+
+ @-webkit-keyframes swirl-in-fwd{0%{-webkit-transform:rotate(-540deg) scale(0);transform:rotate(-540deg) scale(0);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}
+ @keyframes swirl-in-fwd{0%{-webkit-transform:rotate(-540deg) scale(0);transform:rotate(-540deg) scale(0);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}
 

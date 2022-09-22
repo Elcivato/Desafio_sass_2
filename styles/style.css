@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+.fa-facebook, .fa-whatsapp {
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.fa-facebook:hover, .fa-whatsapp:hover {
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #d743f5;
+}
+*::selection {
+  background-color: black;
+  color: #d743f5;
+}
+
+header {
+  background-color: #d743f5;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+}
+header .logo {
+  width: 100px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  grid-gap: 10px;
+}
+header .navbar .menu .menu__item {
+  -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+header .navbar .menu .menu__item a {
+  background: white;
+  border: 5px solid white;
+  color: #d743f5;
+  text-decoration: none;
+  padding: 1rem;
+}
+header .navbar .menu .menu__item a:hover {
+  background: #d743f5;
+  color: white;
+}
+header .navbar .menu .menu__item:nth-child(4) a {
+  background: #972262;
+  border-color: #972262;
+  color: white;
+}
+header .navbar .menu .menu__item:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+header .navbar .menu .menu__item:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+header .navbar .menu .menu__item:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+header .navbar .menu .menu__item:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+.imagenPrincipal {
+  height: 80vh;
+  background-image: url("../img/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+}
+.imagenPrincipal h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.596);
+  padding-inline: 15px;
+}
+.imagenPrincipal h2::first-letter {
+  color: #d743f5;
+}
+.imagenPrincipal h2::-moz-selection {
+  background: #d743f5;
+  color: black;
+}
+.imagenPrincipal h2::selection {
+  background: #d743f5;
+  color: black;
+}
+.imagenPrincipal p {
+  color: white;
+  text-align: center;
+}
+.imagenPrincipal p::first-line {
+  color: #d743f5;
+}
+.imagenPrincipal p::-moz-selection {
+  background: black;
+  color: #d743f5;
+}
+.imagenPrincipal p::selection {
+  background: black;
+  color: #d743f5;
+}
+
+.tarjetitas {
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+.tarjetitas .tarjetita {
+  background-color: #d743f5;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.tarjetitas .tarjetita .informacion {
+  padding: 0 20px 20px 20px;
+}
+.tarjetitas .tarjetita .tarjetita__imagen {
+  max-width: 100%;
+}
+.tarjetitas .tarjetita.tarjetitados {
+  flex: 1.5;
+}
+.tarjetitas .tarjetitablue {
+  background-color: blue;
+}
+.tarjetitas .tarjetitayellow {
+  background-color: yellow;
+}
+.tarjetitas .tarjetitablack {
+  background-color: green;
+}
+
+.cajitas {
+  margin-bottom: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cajitas .cajita {
+  background: #d743f5;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajitas .cajita1 {
+  width: 200px;
+  height: 150px;
+}
+
+.cajitas .cajita2 {
+  width: 150px;
+  height: 200px;
+}
+
+.cajitas .cajita3 {
+  width: 200px;
+  height: 150px;
+}
+
+.cajitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  padding-block: 1rem;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: #d743f5;
+  color: white;
+  padding-block: 20px;
+}
+.pie .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pie .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-facebook, .fa-whatsapp {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: #8b0960;
+}
+
+.fa-whatsapp {
+  background-color: #3fda10;
+}
+
+.cajitas .cajita1 {
+  background-color: #3fda10;
+}/*# sourceMappingURL=estilo.css.map */

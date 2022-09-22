@@ -4,101 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio_coder_house</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/32230/image/travel-agency-logo-maker-with-travel-graphics-a1202.jpg" type="image/x-icon">
-
+    <title>Desafios Sass 2</title>
+    <script src="https://kit.fontawesome.com/5defac5f80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
     <header>
-        <img class="logo" src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/32230/image/travel-agency-logo-maker-with-travel-graphics-a1202.jpg" alt="">
-
+        <img class="logo" src="./img/logo.jpg" alt="Logo de CarpiViajes">
         <nav class="navbar">
-
             <ul class="menu">
-
                 <li class="menu__item">
-
                     <a href="./index.html">Inicio</a>
-
                 </li>
-
                 <li class="menu__item">
-                    
-                    <a href="#">Quiénes somos</a>
-
+                    <a href="./pages/quienes-somos.html">Quiénes somos</a>
                 </li>
-
                 <li class="menu__item">
-
-                    <a href="#">Servicios</a>
+                    <a href="./pages/servicios.html">Servicios</a>
                 </li>
-
                 <li class="menu__item">
-
-                    <a href="#">Contacto</a>
-
+                    <a href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="imagenPrincipal">
-
-            <h2>Bienvenidos a Travel Agency</h2>
+            <h2>Welcome to Travel Agency</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus inventore voluptates rem impedit fugiat officia aliquam voluptas! Commodi ab ut fugiat quas odio ratione quidem impedit similique aperiam. Modi.</p>
         </section>
         <section class="tarjetitas">
 
-            <div class="tarjetita tarjetitauno">
-                <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="tarjetita__imagen">
+            <div class="tarjetita tarjetitauno tarjetitablue">
+                <img src="./img/paisaje.jpg" alt="Paisaje" class="tarjetita__imagen">
                 <div class="informacion">
-
                     <h4 class="tarjetita__titulo">Viaje n° 1</h4>
-
                     <p class="tarjetita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo, deleniti obcaecati.</p>
-
                     <button class="tarjetita__boton">Ver más...</button>
                 </div>
             </div>
-
-            <div class="tarjetita tarjetitados">
-
-                <img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Paisaje" class="tarjetita__imagen">
-
+            <div class="tarjetita tarjetitados tarjetitayellow">
+                <img src="./img/paisaje.jpg" alt="Paisaje" class="tarjetita__imagen">
                 <div class="informacion">
-
                     <h4 class="tarjetita__titulo">Viaje n° 1</h4>
-
                     <p class="tarjetita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo, deleniti obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo, deleniti obcaecati.</p>
-
                     <button class="tarjetita__boton">Ver más...</button>
                 </div>
             </div>
-            <div class="tarjetita tarjetitatres">
-
-                <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Paisaje" class="tarjetita__imagen">
-
+            <div class="tarjetita tarjetitatres tarjetitablack">
+                <img src="./img/paisaje.jpg" alt="Paisaje" class="tarjetita__imagen">
                 <div class="informacion">
-
                     <h4 class="tarjetita__titulo">Viaje n° 1</h4>
-
                     <p class="tarjetita__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo, deleniti obcaecati.</p>
-
                     <button class="tarjetita__boton">Ver más...</button>
                 </div>
             </div>
 
         </section>
+        <section class="cajitas">
+            <div class="cajita cajita1">
+                WhatsApp
+            </div>
+            <div class="cajita cajita2">
+                Cajita 2
+            </div>
+            <div class="cajita cajita3">
+                Cajita 3
+            </div>
+        </section>
     </main>
     <footer class="pie">
-
-        <p>Todos los derechos reservados</p>
-
-        <p>Travel Agency</p>
-
+        <div class="iconos">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
     </footer>
 
 </body>

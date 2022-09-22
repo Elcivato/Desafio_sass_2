@@ -4,23 +4,30 @@
     gap: 30px;
 
     .tarjetita {
+        background-color: $mainColor;
+        border-radius: 30px;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         gap: 10px;
         flex: 1;
-        background-color: $maincolor;
-        border-radius: 30px;
-        overflow: hidden;
 
         .informacion {
             padding: 0 20px 20px 20px;
         }
+
         .tarjetita__imagen {
             max-width: 100%;
         }
+
         &.tarjetitados {
             flex: 1.5;
         }
     }
-    
+
+    @each $color in blue, yellow, black {
+        .tarjetita#{$color} {
+            background-color: $color;
+        }
+    }
 }
